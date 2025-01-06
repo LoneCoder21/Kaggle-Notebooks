@@ -286,8 +286,7 @@ BsmtQual: Evaluates the height of the basement
 BsmtCond: Evaluates the general condition of the basement
 
        Ex	Excellent
-       Gd	Good
-       TA	Typical - slight dampness allowed
+       Gd	GoodYr
        Fa	Fair - dampness or some cracking or settling
        Po	Poor - Severe cracking, settling, or wetness
        NA	No Basement
