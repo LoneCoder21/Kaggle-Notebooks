@@ -109,7 +109,7 @@ Neighborhood: Physical locations within Ames city limits
 Condition1: Proximity to various conditions
 	
        Artery	Adjacent to arterial street
-       Feedr	Adjacent to feeder street	
+       Feedr	Adjacent to feeder street
        Norm	Normal
        RRNn	Within 200' of North-South Railroad
        RRAn	Adjacent to North-South Railroad
