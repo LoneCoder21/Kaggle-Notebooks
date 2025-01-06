@@ -110,7 +110,7 @@ Condition1: Proximity to various conditions
 	
        Artery	Adjacent to arterial street
        Feedr	Adjacent to feeder street	
-       Norm	Normal	
+       Norm	Normal
        RRNn	Within 200' of North-South Railroad
        RRAn	Adjacent to North-South Railroad
        PosN	Near positive off-site feature--park, greenbelt, etc.
@@ -280,7 +280,7 @@ BsmtQual: Evaluates the height of the basement
        Gd	Good (90-99 inches)
        TA	Typical (80-89 inches)
        Fa	Fair (70-79 inches)
-       Po	Poor (<70 inches
+       Po	Poor (<70 inches)
        NA	No Basement
 		
 BsmtCond: Evaluates the general condition of the basement
@@ -309,7 +309,7 @@ BsmtFinType1: Rating of basement finished area
        LwQ	Low Quality
        Unf	Unfinshed
        NA	No Basement
-		
+
 BsmtFinSF1: Type 1 finished square feet
 
 BsmtFinType2: Rating of basement finished area (if multiple types)
@@ -456,7 +456,7 @@ PavedDrive: Paved driveway
        Y	Paved 
        P	Partial Pavement
        N	Dirt/Gravel
-		
+
 WoodDeckSF: Wood deck area in square feet
 
 OpenPorchSF: Open porch area in square feet
