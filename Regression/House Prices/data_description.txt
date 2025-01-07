@@ -25,7 +25,7 @@ MSZoning: Identifies the general zoning classification of the sale.
        I	Industrial
        RH	Residential High Density
        RL	Residential Low Density
-       RP	Residential Low Density Park 
+       RP	Residential Low Density Park
        RM	Residential Medium Density
 	
 LotFrontage: Linear feet of street connected to property
