@@ -34,7 +34,7 @@ LotArea: Lot size in square feet
 
 Street: Type of road access to property
 
-       Grvl	Gravel	
+       Grvl	Gravel
        Pave	Paved
        	
 Alley: Type of alley access to property
