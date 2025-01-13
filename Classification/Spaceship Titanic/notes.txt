@@ -1,0 +1,8 @@
+create more boolean features from numerical distributions if appropriate. could've created an moneyspent feature.
+look more at joint distributions to fill missing values in a smarter way. also helps in cases of hidden correlations from correlation matrix
+apply standard scaler after log transform to force mean 0 and std-dev 1
+only choose most important parameters for grid search. i went overboard
+try Catboost model next time
+be strict with the choosing of final models. Only Catboost and LightGBM works fine here
+potentially change classification threshold based on model bias
+don't only look at correlation. it's sometimes misleading and should also look at mutual information or visually do EDA
