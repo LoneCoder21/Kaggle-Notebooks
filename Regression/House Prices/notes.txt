@@ -1,0 +1,8 @@
+deal with and remove multicollinearity features
+deal with huge outliers and remove them (IQR method and/or with scatter plots)
+use models to deal with outliers (Lasso/Ridge)
+compute and check skew of features
+log transform the skewed features
+additional feature engineering by doing log/sqrt/x^2
+consider stackingcvregressor and/or votingclassifier
+consider using RobustScaler for outliers instead of just StandardScaler
