@@ -1,5 +1,6 @@
 create more boolean features from numerical distributions if appropriate. could've created an moneyspent feature.
 look more at joint distributions to fill missing values in a smarter way. also helps in cases of hidden correlations from correlation matrix
+check more properties of missing values. maximum amount of missing in rows
 apply standard scaler after log transform to force mean 0 and std-dev 1
 only choose most important parameters for grid search. i went overboard
 try Catboost model next time
