@@ -1,0 +1,19 @@
+check out optuna
+time features are good. especially the not so obvious cosine and sine features since time is periodic
+maybe count encode all category features.
+when in doubt replace categorical features with unknown. should've done this. similar goes for numerical features
+also view correlation matrix as a correlation plot purely against the target label (helps in case correlation is small and heatmap is extremely dark)
+also view missing values as a band heatmap
+you can use EDA to bin numerical features against some other feature. here for instance, i should've binned Income against Premium Amount to see patterns
+remove useless features based on correlation or feature importance
+sometimes leaving out numerical features empty is the way to go (only after u try mean/median/groupby imputation methods)
+you can use model scores (CV or RMSLE) as weights when stacking or for weighted voting methods
+target encoding is a good feature engineering strategy (especially with high cardinality features)
+target encoding works even with numerical features (can use binning to categorize the feature)
+TE mean, TE median, TE min, TE max, nunique or count encoding works good
+TE smoothing is also a safety trick that represents confidence with the mean. avoids overfitting to a degree
+Learn and Read about Forward Feature Selection in order to choose the useful features
+Sometimes it's useful to keep information about NAN values as is (especially apparent if target mean for nans is far from target mean for not nans for a specific column) (EDA also helps here)
+when using ensembles, try median for the target if the final metric is MAE as it avoids outliers. Otherwise, use mean as base
+consider using YDF GradientBoostedTreesLearner (it's very strong with nearly no tuning)
+A way to target encode is to use a simpler model to predict the target and use it as a new feature. 
