@@ -1,0 +1,23 @@
+Trust your CV Scores
+Don't trust public LB Scores
+use OOF file probabilities for ensembling
+different data transformations for different model pipelines
+leak free target encode + target smoothing high cardinality
+for models that can handle categorical, we shouldn't one hot encode as one hot destroys ordinal information (leave categorical alone for Catboost)
+Other or Rare category for few category samples
+Ordinal categories (Dietary Habits)
+StratifiedKFold for imbalanced data
+for synthetic datasets, it's better to leave the data as is
+use different scoring metric for GridSearchCV since imbalanced (AUC/F1 Score) - CV score also worked for 1st place solution
+Early Stopping Rounds for speedup
+External Feature Engineering (Profession Salaries)
+Hyperparameter Tuning - [Optuna, GridSearchCV, WandB]
+Models - [LightGBM Dart/GOSS, AdaBoostClassifier, GradientBoostedTreesLearner, AutoGluon, LightAutoML]
+Outlier Detection and Removal - [Box Plot Detection, IsolationForest Outlier Removal]
+Ensemble - [AutoGluon, Hill Climbing, Ridge, Lasso]
+Plots - [Model accuracies scatter plot, Treemap Plot, SHAP values]
+Hill Climbing
+	Hill Climbing for ensemble (100 different weights from -0.5-0.5 with 0.01 increment)
+	Hill Climbing AUC Score as eval metric
+	Hill Climbing probabilities to Log Odds instead of arithmetic mean
+	Hill Climbing threshold vs top K percent of probabilities to be target = 1 (K retrieved from train target distribution)
