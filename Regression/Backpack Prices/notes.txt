@@ -1,0 +1,27 @@
+use KNN sometimes to check for duplicates. original dataset has 5% rows duplicated + noise. KNN or group by aggregations with GBDT solves this.
+group by statistics - 'mean', 'std', 'count', 'min', 'max', 'nunique', 'skew', quantiles, can also do more unique statistics
+use group by statistics on categorical features
+also use quantiles for group by statistics
+rounding as features to different decimal places - round(range(7,10))
+combine 2 categorical columns into one column, can also no multi gram combinations (2-7 gram combos)
+combine 2 numerical columns or categorical + numerical columns using base 10 or by treating numerical as categorical
+extract float32 as digits - odd
+all nan values as a single base-2 column using bits - odd
+
+quoted feature engineering technique - 'I try each idea one at a time. Each idea will create about a dozen features together. Then i add those new dozen features to the model. If CV score improves, I keep that dozen, if not I discard them. Then I brainstorm for another dozen. I continue this process.'
+
+afterwards, eliminate features using RFE or feature importance
+python tip - use map() function for feature engineering
+scikit and cuML has TargetEncoder(). prefer to use smooth=20 or higher. learn how these encoders work.
+use rapids cuDF for big dataset like in this competition
+use higher folds. ravi used 20 fold with shuffle
+you can use external data for feature engineering as well
+missing indicator features for each column (nan_Brand = T/F, nan_Color = T/F, etc). chris used a single feature of base-2 value for this
+missing sum row feature
+ravi also used MLP for stacking instead of just LogisticRegression
+consider using early_stopping_rounds with a predefined validation set
+rapids cuDF one liner: %load_ext cudf.pandas
+submissions can be made easier by first reading the sample submission as a dataframe first
+learn how Pool object works
+consider using mosaic plots for bivariate categorical analysis
+learn how skew is computed
